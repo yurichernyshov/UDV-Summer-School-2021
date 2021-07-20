@@ -17,3 +17,6 @@
 Выходные данные, формируемые предварительно обученной моделью ONNX, представляют собой массив длины 21125, представляющий тензорные элементы с 125 x 13 x 13 измерениями.
 
 Данный прототип предоставляет входные данные для обработки моделью и обрабатывай выходные данные.
+
+### Результат обработки изображений
+Полученные результаты можно посмотреть в папке [outputs](https://github.com/SpaciSoxrani/UDV-Summer-School-2021/tree/add-object-detection/tasks/Smirnova_Anastasiya_Object_Detection_ML.NET/ObjectDetection/assets/images/output)
