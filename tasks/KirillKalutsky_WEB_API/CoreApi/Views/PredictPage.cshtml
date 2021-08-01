@@ -1,0 +1,43 @@
+﻿@using CoreApi.ML.Models
+
+<header>
+</header>
+
+<body>
+    <div class="content-wrapper main-content clear-fix">
+        <h1>Assessment of the sentimentality of the comment</h1>
+        <form id="form1" method="post" action="/Predict"
+              enctype="application/x-www-form-urlencoded">
+
+            <div>
+                <div style="display:inline-block;">
+                    <label for="SentimentText">Write your comment</label>
+                    <br />
+                    <textarea rows="5" cols="45" name="SentimentText"></textarea>
+                </div>
+                
+                <div style="display:inline-block;">
+                    @{
+                        ViewBag.Title = "Index";
+                    }
+
+                    @{
+                        var data = ViewBag.Message;
+                    }
+
+                    @if (data != null)
+                    {
+                        <label for="Result">Result</label>
+                        <br />
+                        <textarea cols="45" rows="5" readonly name="Result">@data.ToString()</textarea>
+                    }
+                </div>
+            </div>
+
+            <div style="padding-top:10px;">
+                <input id="sendComplexForm" type="submit" value="Submit" />
+            </div>
+        </form>
+
+    </div>
+</body> 
